@@ -20,3 +20,23 @@ h3 {
     padding: 0;
     font-family : 'Poppins', sans-serif;
 }
+
+body {
+    background : var(--clr-dark-blue);
+}
+
+.container {
+    max-width : 1440px;
+    margin : 50vh auto;
+    background : var(--clr-dark-grayish-blue);
+}
+
+.advice-section {
+    border-radius : 20px;
+}
+
+@media (max-width : 767px) {
+    .container {
+        max-width : 375px;
+    }
+}
