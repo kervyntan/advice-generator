@@ -7,7 +7,7 @@ fetch("https://api.adviceslip.com/advice")
     res.json()
 )
 .then((data) => {
-    advice.innerHTML = data.slip.advice;
+    advice.innerHTML = `"${data.slip.advice}"`;
     // console.log(data.slip.advice);
 })
 
