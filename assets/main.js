@@ -1,4 +1,5 @@
 const advice = document.querySelector(".advice-text");
+const adviceTitle = document.querySelector(".advice-title");
 const adviceBtn = document.querySelector(".advice-btn");
 
 const fetchAdvice = () => {
@@ -10,7 +11,8 @@ fetch("https://api.adviceslip.com/advice")
 )
 .then((data) => {
     advice.innerHTML = `"${data.slip.advice}"`;
-    // console.log(data.slip.advice);
+    adviceTitle.innerHTML = `Advice #${data.slip.id}`;
+    // console.log(data);
 })
 
 }
